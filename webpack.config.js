@@ -11,7 +11,9 @@ module.exports = {
 	devServer: { port: 8080,
 		contentBase: './public'
 	},
-	
+	resolve: {
+		extensions: ['', '.js', '.jsx']
+	},
 	module: {
 		loaders: [{
 			test: /.jsx?$/,
